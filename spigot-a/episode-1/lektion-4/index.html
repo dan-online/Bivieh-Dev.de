@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Spigot-A</title>
+      <meta name="author" content="BiVieh">
+    <meta name="description" content="Programmieren soll Spaß machen...habe ich jedenfalls gehört.">
+    <meta name="theme-color" content="#138fc2">
+    <meta property="og:image" content="/images/user.png">
+    <meta property="og:title" content="BiVieh">
+    <meta property="og:url" content="https://bivieh-dev.de">
+    <meta property="og:site_name" content="BiVieh">
+    <meta property="og:description" content="Programmieren soll Spaß machen...habe ich jedenfalls gehört.">
+    <meta name="description" content="Programmieren soll Spaß machen...habe ich jedenfalls gehört.">
+    <meta name="developer" content="DanCodes">
+    <link rel="shortcut icon"  href="https://static.wixstatic.com/media/f6f526_7f2c090683984c3a84bcf796a41e6547%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/f6f526_7f2c090683984c3a84bcf796a41e6547%7Emv2.jpg" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<style>
+html {
+ background-color: white /*Just to fix a bug, don't erase this :)*/   
+}</style>
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <div style="display: none" class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+<script>document.getElementsByClassName('preloader')[0].style.display = ''</script><!--So people who don't have js will still see the site -DanCodes -->
+<div class="mainmenu-area affix" data-offset-top="100">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" style="margin-top: 33px" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand logo">
+                        <img src="/images/user.png" height="auto" width="70px" style="border-radius: 50%;">
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <style>.button {margin-top:35px; border-color: #fff;}</style>
+                    <li><a class="button" href="/">Home</a></li>
+                    <li><a class="button" href="/contact.html">Contact</a></li>
+                    <li id="drop">
+                            <a class="button" id="dropping" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Tutorials
+                            </a>
+                            <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <!--Dropdown items can go here -DanCodes-->
+                              <a  class="dropdown-item" href="/spigot-a/">Spigot-Anfänger</a><br>
+                              <a  class="dropdown-item" href="/spigot-e/">Spigot-Extra</a><br>
+                              <a  class="dropdown-item" href="/spigot-ttt/">TTT</a><br>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<style>
+#green span {
+ background-color: rgb(85,189,77) !important /*Change the color values here for the expanison buttons*/   
+}</style>
+    <section class="section-padding" style="padding-bottom: 0px !important"><br>
+        <div class="container" style="padding: 0px">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <img style="border-radius: 50%; margin-bottom: 7%;" src="https://static.wixstatic.com/media/f6f526_219b43cdf40043ad8a68404b8c68608a~mv2.png/v1/fill/w_117,h_118,al_c,q_80,usm_0.66_1.00_0.01/minecraft-icon-0.webp">
+                        <h1>Episode 1, Lektion 4</h1>
+                        <p>Um alle Plugins, die wir gemeinsam programmieren werden, testen zu können, erstellen wir uns unseren eigenen Server auf dem PC. Wir nutzen dabei die Serversoftware Spigot auf der Version 1.8.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-sm-offset-2">
+                    <div class="page-title">
+                        <h1>Übungen</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel">
+                            <h4 class="panel-title" id="green">
+                                <a id="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">Start Script</a>
+                            </h4>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <p><code>Start.bat-Skript:
+                                        ​
+                                        java -Xmx1G -jar spigot.jar 
+                                        pause</code></p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a id="collapse"  data-toggle="collapse" data-parent="#accordion" href="#collapse2">Was ist Spigot?</a>
+                            </h4>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <p>Spigot ist eine Serversoftware, die auf CraftBukkit basiert.
+                                        Verschiedene Features des Vorgängers wurden optimiert um ein optimales Nutzererlebnis zu ermöglichen.
+                                        Wir nutzen Spigot zum Einen um unseren Server zum Laufen zu bekommen, zum Anderen aber auch als Basis zur Programmierung unserer Plugins.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a id="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Downloads</a>
+                            </h4>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6" style="text-align: center; align-content: center">
+                                        <img src="https://static.wixstatic.com/media/f6f526_219b43cdf40043ad8a68404b8c68608a~mv2.png/v1/fill/w_117,h_117,al_c,q_80,usm_0.66_1.00_0.01/minecraft-icon-0.webp"><br><br>
+                                        <h3><a href="https://getbukkit.org/download/spigot">Download Spigot</a></h3>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6" style="text-align: center; align-content: center">
+                                        <img src="https://static.wixstatic.com/media/f6f526_8f8cf0ec920e4eb8a1400cc9ab6de902~mv2.png/v1/fill/w_117,h_117,al_c,q_80,usm_0.66_1.00_0.01/269535_bat_256x256.webp"><br><br>
+                                        <h3><a target="_blank" href="https://www.mediafire.com/file/2i04pjnah2q68c1/Start.bat/file">Fertige Start.bat</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br><br>
+
+    <footer style="padding-top: 25px; color: #138fc2 !important; text-align: center;" class="footer-area relative sky-bg" id="contact-page">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="social-menu x-left">
+                            <!--You can add any social media you want here -DanCodes-->
+                            <li><a href="https://www.youtube.com/channel/UCoZtjPCrPugVD9Q7Fb3tJ6w"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h1 style="font-size: 50px">BIVIEH-DEV</h1>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        © 2019 BiVieh, <a style="color: #138fc2" href="https://mayorchano.me">DanCodes</a>
+                    </div>
+                </div>
+            </div><br>
+    </footer>
+
+
+
+
+
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/jquery.parallax-1.1.3.js"></script>
+    <script src="/js/magnific-popup.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
